@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+
+<!--
+GNAT Studio menu extender for AVR-Ada utilities
+-->
+
+<avrada>
+
+  <action name="probeflash" output="default output">
+    <external output="Avr Ada" > xterm -e ./avrada-flash.sh</external>
+  </action>
+
+  <action name="probedebug" output="default output">
+    <external output="Avr Ada" > xterm -hold -e ./avrada-debug.sh</external>
+  </action>
+
+  <action name="createhex" output="default output">
+    <external output="Avr Ada" > xterm -e ./avrada-hex.sh</external>
+  </action>
+
+  <action name="alireversion">
+    <external>alr version</external>
+  </action>
+
+  <action name="projectdir">
+    <shell>pwd</shell>
+    <external>ls -lpX --time-style=long-iso</external>
+  </action>
+
+  <submenu>
+
+    <title>Avr Ada</title>
+      <menu after ="Build" action="probeflash">
+        <title>Flash program and run</title>
+      </menu>
+      <menu action="probedebug">
+        <title>Connect probe to AVR device</title>
+      </menu>
+      <menu action="createhex">
+        <title>Create hex file from elf</title>
+      </menu>
+
+      <menu><title/></menu>
+
+      <menu action="alireversion">
+        <title>Alire version</title>
+      </menu>
+      <menu action="projectdir">
+        <title>List root project</title>
+      </menu>
+
+  </submenu>
+
+</avrada>

@@ -1,0 +1,27 @@
+name = "flash_led"
+description = "Basic example for AVR microcontrollers"
+version = "0.0.1"
+
+authors = ["Your_Name"]
+maintainers = ["Your_Name <name@domain.tld>"]
+maintainers-logins = ["YOURLOGIN"]
+licenses = "GPL-2.0-or-later WITH GCC-exception-3.1"
+website = "https://www.domain.tld"
+tags = ["avr", "embedded", "demo"]
+
+project-files = ["flash_led.gpr"]
+
+[configuration.values]
+avrada_rts.AVR_MCU = "atmega1280"
+avrada_rts.Clock_Frequency = 16000000
+
+[[depends-on]]
+gnat_avr_elf = "^11 | ^12.2"
+avrada_rts = "^2.0.1"
+avrada_mcu = "^2.0.2"
+avrada_lib = "^2.0.2"
+
+[[pins]]
+avrada_lib = { path = "../../avrada_lib_2.0.2_be6627e4" }
+avrada_mcu = { path = "../../avrada_mcu_2.0.2_f6ef583f" }
+
