@@ -5,7 +5,7 @@
 Ada Development on AVR Microcontroller (ADAM) is based on the **latest GNAT, Alire and GNAT Studio releases and allows real-time AVR debugging in GNAT Studio**.
 
 ## Documentation build
-This documentation has been created with Libre Office  and ressoures available in [https://github.com/sowebio/ada-logo](https://github.com/sowebio/ada-logo) and [https://github.com/sowebio/doc-build](https://github.com/sowebio/doc-build).
+This documentation has been created with Libre Office and ressources available in [https://github.com/sowebio/ada-logo](https://github.com/sowebio/ada-logo) and [https://github.com/sowebio/doc-build](https://github.com/sowebio/doc-build).
 
 ## Copyright
 
